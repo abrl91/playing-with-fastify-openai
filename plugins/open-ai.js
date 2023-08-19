@@ -9,7 +9,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const openaiPlugin = async (fastify, options) => {
   try {
     const openaiInstance = new OpenAI({
-      api_ke: OPENAI_API_KEY,
+      api_key: OPENAI_API_KEY,
     });
 
     fastify.decorate("openai", openaiInstance);
